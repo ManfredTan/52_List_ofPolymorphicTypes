@@ -81,6 +81,10 @@ public class List_inArraySlots {
       preserving existing data.
      */
      private void expand() {
+          Object[] biggerList = new Object[typeOfElements.length * 2];
+          for (int index = 0; index < typeOfElements.length; index ++)
+              biggerList[index] = typeOfElements[index];
+          typeOfElements = biggerList;
 
            /* S.O.P. rules for debugging:
               Working methods should be silent. But during
@@ -90,7 +94,8 @@ public class List_inArraySlots {
               */
     }
 
-    // public Object get(int index) {
-    // }
+    public Object get(int index) {
+          return typeOfElements[index];
+    }
 
 }

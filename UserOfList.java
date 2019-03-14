@@ -39,14 +39,14 @@ public class UserOfList {
         list.add( 3, -1, 1.618, "junk", false);
         list.add( 3, -1, 1.618, "junk", true);
 
-        //testing get method
-        // for (int elemIndex = list.size(); elemIndex >= 0; elemIndex--) {
-        //         System.out.println(
-        //             "" +
-        //             elemIndex + ": " +
-        //             list.get(elemIndex)
-        //         );
-        // }
+        // testing get method
+        for (int elemIndex = list.size(); elemIndex >= 0; elemIndex--) {
+                System.out.println(
+                    "" +
+                    elemIndex + ": " +
+                    list.get(elemIndex)
+                );
+        }
 
     }
 }
